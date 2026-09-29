@@ -15,7 +15,7 @@ body{
 .contenedor{
     width:1000px;
     height:550px;
-    background:white;
+    background:rgb(255, 255, 255);
     border-radius:18px;
     overflow:hidden;
     display:flex;
@@ -87,7 +87,7 @@ select{
     padding:12px;
     margin-top:6px;
     margin-bottom:12px;
-    border:1px solid #d4d4d4;
+    border:1px solid #0084ff;
     border-radius:8px;
     font-size:15px;
 }
@@ -104,13 +104,20 @@ button{
     border:none;
     border-radius:30px;
     background:#27b5ff;
-    color:white;
+    color:rgb(255, 255, 255);
     font-size:17px;
     font-weight:bold;
     cursor:pointer;
     transition:0.3s;
 }
+img {
+  position: absolute;
+  top: 165px ;
+  width: 200px; 
+  height: auto;
+  object-fit: contain;
 
+}
 button:hover{
     background:#0d99e3;
 }
