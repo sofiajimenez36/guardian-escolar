@@ -4,54 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Guardian Escolar</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    
-    <div class="contenedor">
 
-        <div class="izquierda">
+    <main class="contenedor">
 
-            <div class="titulo">guardian</div>
+        <form class="formulario">
 
-            <div class="subtitulo">escolar</div>
+            <img
+                class="logo"
+                src="https://i.pinimg.com/736x/c7/e7/03/c7e703869a0484472af6c8611025e481.jpg"
+                alt="Logo de Guardian Escolar"
+            >
 
+            <h1>Inicio de sesión</h1>
 
-        </div>
+            <div class="campo">
+                <label for="usuario">Usuario</label>
+                <input
+                    type="text"
+                    id="usuario"
+                    name="usuario"
+                    placeholder="Julieta Martinez"
+                    autocomplete="username"
+                    required
+                >
+            </div>
 
-        <div class="derecha">
+            <div class="campo">
+                <label for="contrasena">Contraseña</label>
+                <input
+                    type="password"
+                    id="contrasena"
+                    name="contrasena"
+                    placeholder="Ingresa tu contraseña"
+                    autocomplete="current-password"
+                    required
+                >
+            </div>
 
-            <form class="formulario">
-
-                <h2>Inicio de sesion</h2>
-
-                <label>Usuario</label>
-                <input type="text" placeholder="Julieta Martinez">
-
-                <label>Contraseña</label>
-                <input type="password" placeholder="********">
-
-                <label>Cargo</label>
-
-                <select>
-                    <option>Seleccionar</option>
-                    <option>Docente</option>
-                    <option>Acudiente</option>
+            <div class="campo">
+                <label for="cargo">Cargo</label>
+                <select id="cargo" name="cargo" required>
+                    <option value="">Seleccionar</option>
+                    <option value="docente">Docente</option>
+                    <option value="acudiente">Acudiente</option>
                 </select>
+            </div>
 
-                <button type="submit">Ingresar</button>
-                
+            <button type="submit">Ingresar</button>
 
-            </form>
+        </form>
 
-        </div>
-
-    </div>
- <img src="https://i.pinimg.com/736x/c7/e7/03/c7e703869a0484472af6c8611025e481.jpg"alt= "Guardian Escolar">
-
+    </main>
 
 </body>
 
