@@ -1,138 +1,143 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Segoe UI, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background:#eef3f9;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
-.contenedor{
-    width:1000px;
-    height:550px;
-    background:rgb(255, 255, 255);
-    border-radius:18px;
-    overflow:hidden;
-    display:flex;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #eaf4ff, #f5f8fc);
+
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 24px;
 }
 
-.izquierda{
-    width:45%;
-    background:white;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    position:relative;
-    padding:40px;
+.contenedor {
+    width: 100%;
+    max-width: 440px;
+
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px;
+
+    box-shadow: 0 12px 35px rgba(20, 75, 130, 0.12);
 }
 
-.logo{
-    width:220px;
-    margin-bottom:15px;
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.titulo{
-    font-size:48px;
-    font-weight:bold;
-    color:#1170d3;
+.logo {
+    display: block;
+    width: 150px;
+    max-width: 100%;
+    height: 110px;
+
+    object-fit: contain;
+    margin: 0 auto 15px;
 }
 
-.subtitulo{
-    font-size:28px;
-    color:#5d9bcf;
-    letter-spacing:2px;
+.formulario h1 {
+    text-align: center;
+    color: #1170d3;
+    font-size: clamp(24px, 5vw, 30px);
+    margin-bottom: 25px;
 }
 
-.paisaje{
-    position:absolute;
-    bottom:0;
-    left:0;
-    width:100%;
+.campo {
+    width: 100%;
+    margin-bottom: 16px;
 }
 
-.derecha{
-    width:55%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#fafcff;
-}
-
-.formulario{
-    width:340px;
-}
-
-.formulario h2{
-    text-align:center;
-    color:#1170d3;
-    margin-bottom:30px;
-}
-
-label{
-    display:block;
-    margin-top:12px;
-    color:#555;
+.campo label {
+    display: block;
+    color: #44556a;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 7px;
 }
 
 input,
-select{
-    width:100%;
-    padding:12px;
-    margin-top:6px;
-    margin-bottom:12px;
-    border:1px solid #0084ff;
-    border-radius:8px;
-    font-size:15px;
+select {
+    display: block;
+    width: 100%;
+    min-height: 46px;
+
+    padding: 12px;
+    border: 1px solid #b9d7f4;
+    border-radius: 9px;
+
+    background: #ffffff;
+    color: #26384a;
+    font-size: 16px;
 }
 
 input:focus,
-select:focus{
-    outline:none;
-    border-color:#27b5ff;
+select:focus {
+    outline: 2px solid #8acbff;
+    outline-offset: 2px;
+    border-color: #168be0;
 }
 
-button{
-    width:100%;
-    padding:13px;
-    border:none;
-    border-radius:30px;
-    background:#27b5ff;
-    color:rgb(255, 255, 255);
-    font-size:17px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:0.3s;
-}
-img {
-  position: absolute;
-  top: 165px ;
-  width: 200px; 
-  height: auto;
-  object-fit: contain;
+button {
+    width: 100%;
+    min-height: 48px;
+    margin-top: 8px;
+    padding: 13px;
 
-}
-button:hover{
-    background:#0d99e3;
+    border: none;
+    border-radius: 30px;
+
+    background: #168be0;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
 }
 
-@media (max-width:900px){
+button:hover {
+    background: #0d70bb;
+}
 
-    .contenedor{
-        flex-direction:column;
-        width:95%;
-        height:auto;
+button:focus-visible {
+    outline: 3px solid #8acbff;
+    outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+        align-items: center;
     }
 
-    .izquierda,
-    .derecha{
-        width:100%;
+    .contenedor {
+        padding: 26px 20px;
+        border-radius: 16px;
     }
 
+    .logo {
+        width: 125px;
+        height: 95px;
+    }
+
+    .formulario h1 {
+        margin-bottom: 22px;
+    }
+}
+
+@media (max-height: 600px) {
+    body {
+        align-items: flex-start;
+    }
 }
