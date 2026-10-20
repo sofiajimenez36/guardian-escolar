@@ -1,0 +1,32 @@
+<section class="view" id="asistencias">
+  <h2>REGISTRAR ASISTENCIA DEL DÍA</h2>
+  <article class="att">
+    <table>
+      <thead>
+        <tr>
+          <th>Estudiante</th>
+          <th>Grado</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>Ana Gómez</td>
+        <td>6° 1</td>
+        <td class="est">
+          <label class="p">
+            <input type="radio" name="s1" checked>
+            Presente
+          </label>
+          <label class="t">
+            <input type="radio" name="s1">
+            Tardanza
+          </label>
+          <label class="a">
+            <input type="radio" name="s1">
+            Ausente
+          </label>
+        </td>
+      </tr>
+    </table>
+  </article>
+</section>
