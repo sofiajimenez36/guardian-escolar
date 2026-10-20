@@ -1,0 +1,17 @@
+<body>
+<section id="login">
+  <form>
+    <img src="..." alt="Logo de Guardián Escolar">
+    <h1>Inicio de sesión</h1>
+    <label>Usuario
+      <input type="text" placeholder="Ingresa tu usuario" required>
+    </label>
+    <label>Contraseña
+      <input type="password" placeholder="Ingresa tu contraseña" required>
+    </label>
+    <label>Documento
+      <input type="password" placeholder="Documento del Docente" required>
+    </label>
+    <a class="btn" href="#inicio">Ingresar</a>
+  </form>
+</section>
