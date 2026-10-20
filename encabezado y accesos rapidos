@@ -1,0 +1,15 @@
+<main>
+  <header>
+    <h1>¡Hola!</h1>
+    <p>Bienvenido a Guardián Escolar</p>
+    <span>🌲🌲🌲🌲</span>
+  </header>
+
+  <section class="view" id="inicio">
+    <h2>ACCESO RÁPIDO</h2>
+    <div class="quick">
+      <a href="#asistencias">...</a>
+      <label for="envia">...</label>
+      <a href="#reportes">...</a>
+      <a href="#calendario">...</a>
+    </div>
