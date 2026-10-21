@@ -1,0 +1,23 @@
+
+/* Tabla de asistencia */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+th {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+td:last-child,
+th:last-child {
+  text-align: center;
+}
