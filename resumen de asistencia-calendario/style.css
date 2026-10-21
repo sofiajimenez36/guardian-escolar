@@ -1,0 +1,55 @@
+
+/* Distribución del resumen y calendario */
+.grid {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 18px;
+}
+
+/* Gráfico circular */
+.donut {
+  width: 170px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--blue) 0 58%,
+    var(--green) 58% 74%,
+    var(--teal) 74%
+  );
+  display: grid;
+  place-items: center;
+}
+
+/* Centro del gráfico */
+.donut::before {
+  content: "";
+  width: 110px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--card);
+}
+
+/* Leyenda */
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Calendario */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  text-align: center;
+}
+
+.calendar .today {
+  background: var(--blue);
+  color: white;
+}
+
+.calendar .event {
+  background: var(--green);
+  color: white;
+}
