@@ -1,0 +1,30 @@
+
+/* Barras de los reportes */
+.bars {
+  display: none;
+}
+
+.bar {
+  width: var(--w);
+  background: linear-gradient(
+    90deg,
+    var(--blue),
+    var(--teal)
+  );
+  border-radius: 10px;
+  padding: 8px;
+  color: white;
+}
+
+/* Mostrar el reporte seleccionado */
+.seg:has(label:nth-child(1) :checked) ~ .hoy {
+  display: block;
+}
+
+.seg:has(label:nth-child(2) :checked) ~ .sem {
+  display: block;
+}
+
+.seg:has(label:nth-child(3) :checked) ~ .mes {
+  display: block;
+}
