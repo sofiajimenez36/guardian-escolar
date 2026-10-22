@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guardián Escolar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet"><link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<section id="login">
+  <form>
+    <img src="https://i.pinimg.com/736x/c7/e7/03/c7e703869a0484472af6c8611025e481.jpg" alt="Logo de Guardián Escolar">
+    <h1>Inicio de sesión</h1>
+    <label>Usuario <input type="text" placeholder="Ingresa tu usuario" required></label>
+    <label>Contraseña <input type="password" placeholder="Ingresa tu contraseña" required></label>
+    <label>Email  <input type="text" placeholder="Email del Docente" required></label>
+    <a class="btn" href="#inicio">Ingresar</a>
+
+  </form>
+</section>
+<input type="checkbox" id="envia" hidden>
+<div class="app">
+  <aside><h2>💻<br>guardian <span>escolar</span></h2>
+    <nav>
+      <a href="#inicio">🏠 Inicio</a><a href="#asistencias">✅ Asistencias</a><a href="#reportes">📊 Reportes</a><a href="#estudiantes">👥 Estudiantes</a>
+      <a href="#perfil">👤 Perfil</a><a href="#configuracion">⚙️ Configuración</a><a href="#calendario">📅 Calendario</a><a href="#login">🚪 Salir</a>
+    </nav>
+  </aside>
+  <main>
+    <header><h1>¡Hola!</h1><p>Bienvenido a Guardián Escolar</p><span>🌲🌲🌲🌲</span></header>
+    <section class="view" id="inicio"><h2>ACCESO RÁPIDO</h2>
+      <div class="quick"><a href="#asistencias"><span>✅</span>Registra</a><label for="envia"><span>📢</span>Envía</label><a href="#reportes"><span>📊</span>Consulta</a><a href="#calendario"><span>📅</span>Revisa</a></div>
+      <div class="grid">
+        <article><h3>RESUMEN DE ASISTENCIA</h3><div class="donut"><strong>58 %</strong></div>
+          <ul class="legend"><li class="c1">Presentes: <strong>110</strong></li><li class="c2">Tardanzas: <strong>30</strong></li><li class="c3">Ausentes: <strong>50</strong></li></ul></article>
+        <article class="cal"><h3>Mayo 2024</h3>
+          <div>
+            <strong>L</strong><strong>M</strong><strong>M</strong><strong>J</strong><strong>V</strong><strong>S</strong><strong>D</strong>
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span class="today">15</span>
+            <span>16</span><span>17</span><span>18</span><span>19</span><span class="ev">20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span class="ev">30</span><span>31</span></div></article>
+      </div>
+    </section>
+    <section class="view" id="asistencias"><h2>REGISTRAR ASISTENCIA DEL DÍA</h2>
+      <article class="att"><table>
+        <thead><tr><th>Estudiante</th><th>Grado</th><th>Estado</th></tr></thead>
+        <tr><td>Ana Gómez</td><td>6° 1</td><td class="est"><label class="p"><input type="radio" name="s1" checked>Presente</label><label class="t"><input type="radio" name="s1">Tardanza</label><label class="a"><input type="radio" name="s1">Ausente</label></td></tr>
+        <tr><td>Luis Pérez</td><td>10° 5</td><td class="est"><label class="p"><input type="radio" name="s2">Presente</label><label class="t"><input type="radio" name="s2" checked>Tardanza</label><label class="a"><input type="radio" name="s2">Ausente</label></td></tr>
+        <tr><td>María Torres</td><td>9° 2</td><td class="est"><label class="p"><input type="radio" name="s3" checked>Presente</label><label class="t"><input type="radio" name="s3">Tardanza</label><label class="a"><input type="radio" name="s3">Ausente</label></td></tr>
+        <tr><td>Carlos Ruiz</td><td>7° 5</td><td class="est"><label class="p"><input type="radio" name="s4">Presente</label><label class="t"><input type="radio" name="s4">Tardanza</label><label class="a"><input type="radio" name="s4" checked>Ausente</label></td></tr>
+        <tr><td>Sofía Díaz</td><td>8° 2</td><td class="est"><label class="p"><input type="radio" name="s5" checked>Presente</label><label class="t"><input type="radio" name="s5">Tardanza</label><label class="a"><input type="radio" name="s5">Ausente</label></td></tr>
+        <tr><td>Mateo Vargas</td><td>11° 6</td><td class="est"><label class="p"><input type="radio" name="s6">Presente</label><label class="t"><input type="radio" name="s6">Tardanza</label><label class="a"><input type="radio" name="s6" checked>Ausente</label></td></tr>
+        <tr><td>Valentina Rojas</td><td>11° 3</td><td class="est"><label class="p"><input type="radio" name="s7" checked>Presente</label><label class="t"><input type="radio" name="s7">Tardanza</label><label class="a"><input type="radio" name="s7">Ausente</label></td></tr>
+        <tr><td>Daniel Castro</td><td>10° 3</td><td class="est"><label class="p"><input type="radio" name="s8">Presente</label><label class="t"><input type="radio" name="s8" checked>Tardanza</label><label class="a"><input type="radio" name="s8">Ausente</label></td></tr>
+      </table></article>
+    </section>
+    <section class="view" id="reportes"><h2>REPORTES</h2>
+      <article>
+        <div class="seg"><label><input type="radio" name="per" checked>Hoy</label><label><input type="radio" name="per">Semana</label><label><input type="radio" name="per">Mes</label></div>
+        <div class="bars hoy"><p class="c1" style="--w:58%">Presentes <strong>110 (58%)</strong></p><p class="c2" style="--w:16%">Tardanzas <strong>30 (16%)</strong></p><p class="c3" style="--w:26%">Ausentes <strong>50 (26%)</strong></p></div>
+        <div class="bars sem"><p class="c1" style="--w:66%">Presentes <strong>66%</strong></p><p class="c2" style="--w:12%">Tardanzas <strong>12%</strong></p><p class="c3" style="--w:22%">Ausentes <strong>22%</strong></p></div>
+        <div class="bars mes"><p class="c1" style="--w:71%">Presentes <strong>71%</strong></p><p class="c2" style="--w:9%">Tardanzas <strong>9%</strong></p><p class="c3" style="--w:20%">Ausentes <strong>20%</strong></p></div>
+        <a class="btn" download="asistencia.csv" href="data:text/csv;charset=utf-8,Estudiante,Grado,Estado%0AAna%20G%C3%B3mez,5%C2%B0%20A,Presente%0ALuis%20P%C3%A9rez,5%C2%B0%20A,Tardanza%0AMar%C3%ADa%20Torres,5%C2%B0%20B,Presente%0ACarlos%20Ruiz,6%C2%B0%20A,Ausente%0ASof%C3%ADa%20D%C3%ADaz,6%C2%B0%20A,Presente%0AMateo%20Vargas,6%C2%B0%20B,Ausente%0AValentina%20Rojas,7%C2%B0%20A,Presente%0ADaniel%20Castro,7%C2%B0%20B,Tardanza">⬇️ Descargar CSV</a></article>
+    </section>
+    <section class="view" id="estudiantes"><h2>ESTUDIANTES</h2>
+      <article>
+        <div class="seg"><label><input type="radio" name="g" checked>todos</label></div>
+        <ul class="list">
+          <li class="g6">👤 Ana Gómez <span>6° 1</span></li><li class="g7">👤 Luis Pérez <span>7° 4</span></li>
+          <li class="g8">👤 María Torres <span>8° 3</span></li><li class="g9">👤 Carlos Ruiz <span>9° 5</span></li>
+          <li class="g11">👤 Sofía Díaz <span>11° 6</span></li><li class="g11">👤 Mateo Vargas <span>11° 2</span></li>
+          <li class="g10">👤 Valentina Rojas <span>10° 2</span></li><li class="g9">👤 Daniel Castro <span>9° 2</span></li></ul></article>
+    </section>
+    <section class="view" id="perfil"><h2>PERFIL</h2>
+      <article class="profile"><div class="avatar">👤</div>
+        <ul class="info"><li><strong>Nombre</strong>Julieta</li><li><strong>Rol</strong>Docente</li><li><strong>Correo</strong>julieta@guardian.edu</li><li><strong>Cursos</strong>11° 6, 10° 3, 7° 1,9° 5, 10° 1, 8° 2</li></ul></article>
+    </section>
+    <section class="view" id="configuracion"><h2>CONFIGURACIÓN</h2>
+      <article>
+        <label class="switch"><input type="checkbox" checked>Notificaciones de ausencias</label>
+        <label class="switch"><input type="checkbox">Resumen semanal por correo</label>
+        <label class="switch"><input type="checkbox" id="dark">Modo oscuro</label></article>
+    </section>
+    <section class="view" id="calendario"><h2>PRÓXIMOS EVENTOS</h2>
+      <article><p class="muted">Marca los eventos que ya completaste:</p>
+        <ul class="list tasks">
+          <li><label><input type="checkbox"><strong>25 abr</strong> — Entrega de boletines</label></li><li><label><input type="checkbox"><strong>20 may</strong> — Reunión de padres</label></li>
+          <li><label><input type="checkbox"><strong>30 may</strong> — Cierre de notas del periodo</label></li><li><label><input type="checkbox"><strong>5 jun</strong> — Jornada deportiva</label></li></ul></article>
+    </section>
+  </main></div>
+<div class="modal">
+  <form>
+    <h3>Enviar comunicado <label for="envia">×</label></h3>
+    <label>Destinatarios <select><option>Todos los padres</option><option>Solo padres de ausentes</option><option>Docentes</option></select></label>
+    <label>Mensaje <textarea rows="4" placeholder="Escribe tu mensaje..."></textarea></label>
+    <label class="btn" for="envia">📨 Enviar</label>
+  </form>
+</div>
+</body></html>
